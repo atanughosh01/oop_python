@@ -13,7 +13,7 @@ class Employee:
         return self.first + " " + self.last
 
     def email(self):
-        return self.first + "." + self.last + "@company.com"
+        return (self.first + "." + self.last + "@company.com").lower()
 
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amount)
