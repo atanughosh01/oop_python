@@ -60,3 +60,4 @@ print(isinstance(m1, Developer))
 
 print(issubclass(Developer, Employee))
 print(issubclass(Manager, Employee))
+print(isinstance(Developer, Manager))
