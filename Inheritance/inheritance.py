@@ -46,12 +46,17 @@ class Manager(Employee):
 
     def print_emps(self):
         for emp in self.employee_list:
-            print("-->", emp)
             print("-->", emp.fullname())
 
 
 d1 = Developer("Atanu", "Ghosh", 1000, "Python")
 d2 = Developer("Test", "User", 2000, "Java")
 
-print(d1.email())
-print(d1.prog_lang)
+m1 = Manager("Sue", "Smith", 10000, [d1])
+
+print(isinstance(m1, Employee))
+print(isinstance(m1, Manager))
+print(isinstance(m1, Developer))
+
+print(issubclass(Developer, Employee))
+print(issubclass(Manager, Employee))
